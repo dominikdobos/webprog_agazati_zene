@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(24, 161, 153);
+  background: linear-gradient(
+    rgba(24, 161, 153, 1) 0%,
+    rgba(136, 178, 146, 1) 18%,
+    rgba(175, 184, 144, 1) 51%,
+    rgba(217, 191, 142, 1) 80%
+  );
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main {
+  width: 80%;
+  max-width: 852px;
+  min-width: 650px;
+  margin: auto;
+}
+
+article {
+  background-color: rgba(189, 183, 120, 0.5);
+  color: #5a4535;
+  font-family: "Calibri", Garamond, "Comic Sans MS";
+  font-size: 12px;
+}
+
+header {
+  height: 430px;
+  background-image: url("./kepek/zkar_header.jpg");
+}
+
+h1 {
+  line-height: 112px;
+  padding: 3px;
+  font-size: 40px;
+  font-family: "Margarine", cursive;
+  color: darkcyan;
+  border-bottom: 1px solid #999658;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: darkcyan;
+  font-family: "Margarine", cursive;
+  font-weight: bold;
+  background-color: rgba(190, 165, 50, 0.5);
+  border-bottom: 1px dotted #5a4535;
+  border-top: 1px dotted #5a4535;
+  padding: 2px 0;
+}
+
+p:not(.idezet-p) {
+  padding: 5px 0;
+  text-align: justify;
+}
+
+article {
+  border: 1px solid #999658;
+  padding: 5px;
+}
+
+nav {
+  margin-top: 3px;
+  background-size: cover;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+}
+
+nav ul a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li {
+  font-family: "Margarine", cursive;
+  background-image: url(./kepek/bg-nav.png);
+  background-size: cover;
+  font-size: 18px;
+  text-align: center;
+  min-height: 45px;
+  line-height: 45px;
+}
+
+nav ul li:hover a {
+  color: aquamarine;
+}
+
+.article-section {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  gap: 1rem;
+  padding-top: 2vh;
+}
+
+.section-div {
+  background-color: rgba(190, 165, 50, 0.5);
+}
+
+.section-kep {
+  display: grid;
+  gap: 10px;
+}
+
+.zenekar-span {
+  font-weight: bold;
+}
+
+table {
+  margin: 10px auto;
+  border: 1px solid #5a4535;
+  border-collapse: collapse;
+}
+
+tr,
+td,
+th {
+  border: 1px solid #5a4535;
+  padding: 3px;
+}
+
+@media screen and (max-width: 680px) {
+  nav ul {
+    grid-template-columns: 1fr;
+  }
+  .article-section {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .section-kep {
+    grid-template-columns: 1fr 1fr;
+  }
+}
